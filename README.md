@@ -4,7 +4,7 @@
 
 Welcome to **Mesrobyan77 Portfolio**, a modern and interactive portfolio application showcasing your work with stunning 3D visuals and smooth animations. Built with cutting-edge web technologies, this project creates an engaging, professional platform for developers, designers, and creatives to display their skills and projects.
 
-![Portfolio Hero Image](https://github.com/Mesrobyan77/Portfolio/issues/1#issue-3550911941)
+![Portfolio Hero Image](https://github.com/Mesrobyan77/Portfolio/issues/1)
 
 ## Table of Contents
 - [About](#about)
