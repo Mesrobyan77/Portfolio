@@ -21,7 +21,7 @@ Welcome to **Mesrobyan77 Portfolio**, a modern and interactive portfolio applica
 
 The Mesrobyan77 Portfolio is a visually immersive portfolio application powered by React, Three.js, and modern animation libraries. It’s designed to leave a lasting impression with 3D-rendered elements, interactive UI, and a responsive design, making it perfect for professionals looking to stand out.
 
-![Portfolio Screenshot](https://github.com/Mesrobyan77/Portfolio/issues/2#issue-3550917346)
+![Portfolio Screenshot](https://raw.githubusercontent.com/Mesrobyan77/Portfolio/main/public/h.png)
 
 ## Features
 
