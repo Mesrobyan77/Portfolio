@@ -40,8 +40,14 @@ import moonIcon from './moonIcon.svg'
 import adminPanelWhite from './adminPanelWhite.png'
 import CRMD from './CRMD.png'
 import CRMW from './CRMW.png'
+import proj6 from './proj6.png'
+import proj7 from './proj7.png'
+import proj8 from './proj8.png'
 export {
+  proj7,
+  proj8,
   sunIcon,
+  proj6,
   CRMW,
   CRMD,
   adminPanelWhite,

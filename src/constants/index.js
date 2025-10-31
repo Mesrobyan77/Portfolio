@@ -29,6 +29,9 @@ import {
   adminPanelWhite,
   CRMW,
   CRMD,
+  proj6,
+  proj7,
+  proj8,
 } from "../assets";
 import ant from "../assets/tech/ant.svg";
 import Cyberswave from "../assets/company/cyberswave_logo.jpeg";
@@ -48,8 +51,8 @@ export const navLinks = [
   },
   {
     title: "CV",
-    url: "/Khachik_Mesrobyan_CV.pdf", 
-    external: true, 
+    url: "/Khachik_Mesrobyan_CV.pdf",
+    external: true,
   },
 ];
 
@@ -260,6 +263,114 @@ const projects = [
     themes: ["dark", "light"],
     source_code_link: "https://github.com/Mesrobyan77/CRM_front",
     // live: "https://crm-dashboard-app.netlify.app/"
+  },
+  {
+    name: "Serm LLC Website",
+    description:
+      " A modern and professional website for Serm LLC, showcasing their services and projects with a clean design and responsive layout.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Scss",
+        color: "white-text-gradient",
+      },
+    ],
+    image: proj6,
+    live: "https://sermllc.com/",
+  },
+  {
+    name: "Efes Dashboard App",
+    description:
+      "Efes is a modular dashboard and management platform built with React 19, TypeScript, Vite, and MUI. It includes dynamic drag-and-drop components (via DnD Kit and Atlaskit), modern analytics with Recharts, secure JWT-based authentication, Google OAuth integration, and responsive UI powered by Tailwind CSS and Framer Motion. State management is handled by Redux Toolkit, with validation via Formik and Yup. Designed for scalability, performance, and real-time interaction.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "typescript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "vite",
+        color: "purple-text-gradient",
+      },
+      {
+        name: "mui",
+        color: "cyan-text-gradient",
+      },
+      {
+        name: "redux",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "formik",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "yup",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "framer-motion",
+        color: "violet-text-gradient",
+      },
+    ],
+    image: proj7,
+    // source_code_link: "https://github.com/Mesrobyan77/Efes_front",
+    // live: "https://efes-dashboard.netlify.app/"
+  },
+
+  {
+    name: "Movies App",
+    description:
+      "Movies App is a modern movie browsing and discovery platform built with React 19, TypeScript, and Material UI. It provides a responsive interface for exploring trending, popular, and upcoming movies, featuring detailed movie pages and dynamic carousels powered by Swiper and Splide. The app uses Redux Toolkit for state management, Axios for API integration, and Formik + Yup for form handling and validation, ensuring a smooth and intuitive user experience.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "typescript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "mui",
+        color: "cyan-text-gradient",
+      },
+      {
+        name: "redux",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "axios",
+        color: "red-text-gradient",
+      },
+      {
+        name: "formik",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "yup",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "swiper",
+        color: "violet-text-gradient",
+      },
+      {
+        name: "splide",
+        color: "purple-text-gradient",
+      },
+    ],
+    image: proj8,
   },
 ];
 

@@ -5,24 +5,28 @@ import { ComputersCanvas } from "./canvas";
 import { ReactTyped } from "react-typed";
 
 const Hero = () => {
-
-  
   return (
     <section className={`relative w-full h-screen mx-auto`}>
       <div
         className={`absolute inset-0 top-[90px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
-        <div className='flex flex-col justify-center items-center mt-28 md:mt-5 lg:5'>
-          <div className='w-5 h-5 rounded-full bg-[#915EFF]' />
-          <div className='w-1 sm:h-80 h-40 violet-gradient' />
+        <div className="flex flex-col justify-center items-center mt-28 md:mt-5 lg:5">
+          <div className="w-5 h-5 rounded-full bg-[#915EFF]" />
+          <div className="w-1 sm:h-80 h-40 violet-gradient" />
         </div>
 
         <div className="mt-28 md:mt-5 lg:5">
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className='text-[#915EFF]'>Khachik</span>
+            Hi, I'm <span className="text-[#915EFF]">Khachik</span>
           </h1>
           <ReactTyped
-            strings={["Full Stack Developer"]}
+            strings={[
+              "Web Developer",
+              "Front End Developer",
+              "Back End Developer",
+              "Full Stack Developer",
+              "MERN Stack Developer",
+            ]}
             typeSpeed={100}
             backSpeed={50}
             loop
@@ -31,13 +35,13 @@ const Hero = () => {
             className="text-2xl"
           />
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I develop modern, user <br/>
+            I develop modern, user <br />
             interfaces and web applications
           </p>
         </div>
       </div>
 
-      <ComputersCanvas /> 
+      <ComputersCanvas />
     </section>
   );
 };
