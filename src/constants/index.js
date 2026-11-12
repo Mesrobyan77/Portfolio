@@ -32,10 +32,12 @@ import {
   proj6,
   proj7,
   proj8,
+  flowerShop,
+  vapeShop,
+  hdoors,
 } from "../assets";
 import ant from "../assets/tech/ant.svg";
 import Cyberswave from "../assets/company/cyberswave_logo.jpeg";
-import Smart from "../assets/company/smartcode_logo.jpeg";
 export const navLinks = [
   {
     id: "about",
@@ -43,7 +45,15 @@ export const navLinks = [
   },
   {
     id: "work",
-    title: "Work",
+    title: "Experience",
+  },
+  {
+    id: "education",
+    title: "Education",
+  },
+  {
+    id: "projects",
+    title: "Projects",
   },
   {
     id: "contact",
@@ -52,13 +62,12 @@ export const navLinks = [
   {
     title: "CV",
     url: "/Khachik_Mesrobyan_CV.pdf",
-    external: true,
   },
 ];
 
 const services = [
   {
-    title: "Full-Stack Developer (MERN)",
+    title: "Full-Stack Developer",
     icon: web,
   },
   {
@@ -72,31 +81,24 @@ const services = [
 ];
 
 const technologies = [
-  // Core Web
   { name: "HTML 5", icon: html },
   { name: "CSS 3", icon: css },
   { name: "JavaScript", icon: javascript },
   { name: "TypeScript", icon: ts },
 
-  // Styling & UI
   { name: "Tailwind CSS", icon: tailwind },
   { name: "Sass / SCSS", icon: sass },
   { name: "Material UI", icon: mui },
   { name: "Ant Design", icon: ant },
 
-  // Animation
   { name: "GSAP", icon: gsap },
   { name: "Framer Motion", icon: framer },
   { name: "LottieFiles", icon: lottie },
 
-  // Frameworks / Libraries
   { name: "React JS", icon: reactjs },
   { name: "Redux Toolkit", icon: redux },
   { name: "Git", icon: git },
 
-  // { name: "Figma", icon: figma },
-
-  // Backend / Full Stack (still useful for frontend devs)
   { name: "Node JS", icon: nodejs },
   { name: "Express JS", icon: express },
   { name: "Sequelize", icon: sequelize },
@@ -109,45 +111,94 @@ const technologies = [
 const experiences = [
   {
     title: "Frontend Developer",
+    company_name: "V Telecom",
+    icon: web,
+    iconBg: "#383E56",
+    date: "Present",
+    points: [
+      "Implemented UI updates and migrated components from Material UI to Ant Design.",
+      "Resolved bugs and complex application issues while improving responsive behavior and performance.",
+      "Developed scalable, maintainable production features and participated in code reviews.",
+      "Used AI-assisted development workflows to improve delivery speed and code quality.",
+    ],
+  },
+  {
+    title: "Frontend Developer",
     company_name: "Cyberswave",
     icon: Cyberswave,
     iconBg: "#383E56",
     date: "January 2025 – Present",
     points: [
-      "Developed dynamic and responsive user interfaces using **React** and **TypeScript**.",
-      "Implemented animated UI components and transitions using **Framer Motion** and **Lottie**.",
-      "Integrated **RESTful APIs** with **Axios** for fetching and updating data.",
-      "Styled applications using **TailwindCSS** and **MUI**, ensuring responsive and accessible design.",
-      "Implemented real-time chat features using **WebSockets** for seamless messaging and notifications.",
-    ],
-  },
-  {
-    title: "Full-stack Intern",
-    company_name: "SmartCode",
-    icon: Smart,
-    iconBg: "#E6DEDD",
-    date: "3 Months",
-    points: [
-      "Built dynamic and responsive frontend interfaces with **React** and **Redux Toolkit**.",
-      "Created and integrated **RESTful APIs** using **Node.js** and **Express**.",
-      "Designed and managed relational databases with **MySQL**.",
-      "Developed and deployed personal projects including an online shop and a weather application.",
+      "Developed responsive interfaces with React and TypeScript, including animated UI with Framer Motion and Lottie.",
+      "Built drag-and-drop workflows with DnD Kit and Atlaskit Pragmatic Drag and Drop.",
+      "Managed application state with Redux Toolkit and built validated forms with Formik and Yup.",
+      "Integrated REST APIs with Axios and real-time messaging with WebSockets.",
+      "Delivered responsive, accessible interfaces with Tailwind CSS and Material UI.",
     ],
   },
 ];
 
-const testimonials = [
+const education = [
   {
-    // testimonial:
-    //   "I thought it was impossible to make a website as beautiful as our product, but Huzaif proved me wrong.",
-    // name: "MD Mustaqeem",
-    // designation: "Ecommerce",
-    // company: "QuickMart",
-    // image: firstTestimonial,
+    school: "Armenian State Pedagogical University after K. Abovyan",
+    program: "Faculty of Mathematics, Physics & Informatics",
+    date: "2024 – Present",
   },
+  {
+    school: "SmartCode Academy",
+    program: "Web Frontend & Node.js Course",
+    date: "6 Months",
+  },
+  {
+    school: "Yerevan State College of Light Industry",
+    program: "Software for Computing Equipment & Automated Systems",
+    date: "2018 – 2022",
+  },
+];
+
+const languages = [
+  { name: "Armenian", level: "Native" },
+  { name: "Russian", level: "Advanced" },
+  { name: "English", level: "Intermediate" },
 ];
 
 const projects = [
+  {
+    name: "Aurelia Flower Shop",
+    description:
+      "A responsive Armenian flower-shop experience with product discovery, category navigation, search, account and cart flows, and rich seasonal merchandising.",
+    tags: [
+      { name: "e-commerce", color: "pink-text-gradient" },
+      { name: "responsive", color: "green-text-gradient" },
+      { name: "armenian", color: "blue-text-gradient" },
+    ],
+    image: flowerShop,
+    live: "https://aurelia-612.pages.dev/hy",
+  },
+  {
+    name: "Vape Hub",
+    description:
+      "A multilingual 18+ storefront for vape devices, liquids, and accessories, with product discovery, search, accounts, cart flows, themes, and localized content.",
+    tags: [
+      { name: "next.js", color: "white-text-gradient" },
+      { name: "e-commerce", color: "pink-text-gradient" },
+      { name: "i18n", color: "green-text-gradient" },
+    ],
+    image: vapeShop,
+    live: "https://vape-shop-mesrobyan.vercel.app/",
+  },
+  {
+    name: "HDoors",
+    description:
+      "A polished Armenian door catalog and shopping experience with product search, wish list, cart, user account, currency and language controls, and responsive navigation.",
+    tags: [
+      { name: "e-commerce", color: "pink-text-gradient" },
+      { name: "responsive", color: "green-text-gradient" },
+      { name: "ui-ux", color: "blue-text-gradient" },
+    ],
+    image: hdoors,
+    live: "https://hdoors.vercel.app/",
+  },
   {
     name: "Weather App",
     description:
@@ -262,7 +313,6 @@ const projects = [
     imagesByTheme: { dark: CRMW, light: CRMD },
     themes: ["dark", "light"],
     source_code_link: "https://github.com/Mesrobyan77/CRM_front",
-    // live: "https://crm-dashboard-app.netlify.app/"
   },
   {
     name: "Serm LLC Website",
@@ -324,8 +374,6 @@ const projects = [
       },
     ],
     image: proj7,
-    // source_code_link: "https://github.com/Mesrobyan77/Efes_front",
-    // live: "https://efes-dashboard.netlify.app/"
   },
 
   {
@@ -374,4 +422,4 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, education, languages, projects };

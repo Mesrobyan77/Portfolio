@@ -1,7 +1,6 @@
 import { Tilt } from "react-tilt";
 import { github, globus, sunIcon, moonIcon } from "../assets";
-import { useEffect, useRef, useState } from "react";
-import { gsap } from "gsap";
+import { useState } from "react";
 
 const ProjectCard = ({
   name,
@@ -13,31 +12,10 @@ const ProjectCard = ({
   themes,
   imagesByTheme,
 }) => {
-  const cardRef = useRef(null);
-
   const [currentTheme, setCurrentTheme] = useState(themes?.[0] || "light");
   const [currentImage, setCurrentImage] = useState(
     imagesByTheme ? imagesByTheme[currentTheme] : image
   );
-
-  useEffect(() => {
-    const el = cardRef.current;
-    gsap.fromTo(
-      el,
-      { opacity: 0, y: 100 },
-      {
-        opacity: 1,
-        y: 0,
-        scrollTrigger: {
-          trigger: el,
-          start: "top bottom",
-          end: "top center",
-          scrub: true,
-          markers: false,
-        },
-      }
-    );
-  }, []);
 
   const toggleTheme = () => {
     if (!themes) return;
@@ -47,7 +25,7 @@ const ProjectCard = ({
   };
 
   return (
-    <div ref={cardRef}>
+    <div>
       <Tilt
         options={{ max: 45, scale: 1, speed: 450 }}
         className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full h-[476px]"
@@ -55,7 +33,7 @@ const ProjectCard = ({
         <div className="relative w-full">
           <img
             src={currentImage}
-            alt="project_image"
+            alt={`${name} screenshot`}
             className="w-full h-[220px] object-cover object-left rounded-2xl"
           />
 

@@ -1,8 +1,7 @@
-import React from "react";
 import { motion } from "framer-motion";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
-import { toast, ToastContainer } from "react-toastify";
+import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import emailjs from "@emailjs/browser";
 
@@ -39,7 +38,7 @@ const Contact = () => {
       .send("service_mfvhdug", "template_wtknazl", {
         name: values.name,
         message: values.message,
-        title: "Conect with me ",
+        title: "Connect with me",
         email: values.email,
       },"vsSGQUo9KHaqDrzrq")
       .then(
@@ -67,6 +66,21 @@ const Contact = () => {
         >
           <p className={styles.sectionSubText}>Get in touch</p>
           <h3 className={styles.sectionHeadText}>Contact.</h3>
+
+          <div className="mt-6 flex flex-col gap-2 text-sm text-secondary sm:flex-row sm:gap-6">
+            <a
+              href="mailto:khachik.mesrobyan@gmail.com"
+              className="transition-colors hover:text-white"
+            >
+              khachik.mesrobyan@gmail.com
+            </a>
+            <a
+              href="tel:+37477396651"
+              className="transition-colors hover:text-white"
+            >
+              +374 77 396 651
+            </a>
+          </div>
 
           <Formik
             initialValues={initialValues}

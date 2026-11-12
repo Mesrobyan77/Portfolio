@@ -21,11 +21,9 @@ const Hero = () => {
           </h1>
           <ReactTyped
             strings={[
-              "Web Developer",
-              "Front End Developer",
-              "Back End Developer",
               "Full Stack Developer",
-              "MERN Stack Developer",
+              "React & TypeScript Developer",
+              "Node.js Developer",
             ]}
             typeSpeed={100}
             backSpeed={50}
@@ -35,8 +33,8 @@ const Hero = () => {
             className="text-2xl"
           />
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I develop modern, user <br />
-            interfaces and web applications
+            I build scalable, responsive <br />
+            web applications from UI to API.
           </p>
         </div>
       </div>

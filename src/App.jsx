@@ -9,6 +9,7 @@ import {
   Works,
   StarsCanvas,
   Experience,
+  Education,
 } from "./components";
 import Footer from "./components/Footer";
 import { ToastContainer } from "react-toastify";
@@ -29,9 +30,9 @@ const App = () => {
         </div>
         <About />
         <Experience />
+        <Education />
         <Tech />
         <Works />
-        {/* <Feedbacks /> */}
         <div className="relative z-0">
           <Contact />
           <StarsCanvas />

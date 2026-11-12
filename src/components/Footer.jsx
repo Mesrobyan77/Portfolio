@@ -1,5 +1,11 @@
 import React from "react";
-import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa6";
+import {
+  FaEnvelope,
+  FaGithub,
+  FaInstagram,
+  FaLinkedin,
+  FaPhone,
+} from "react-icons/fa6";
 
 const Footer = () => {
   return (
@@ -12,7 +18,7 @@ const Footer = () => {
         <FaInstagram size={24} />
       </a>
       <a
-        href="https://www.linkedin.com/in/khachik-mesrobyan-b78588359?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+        href="https://www.linkedin.com/in/khachik-mesrobyan-b78588359"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -20,6 +26,12 @@ const Footer = () => {
       </a>
       <a href="https://github.com/Mesrobyan77" target="_blank" rel="noopener noreferrer">
         <FaGithub size={24} />
+      </a>
+      <a href="mailto:khachik.mesrobyan@gmail.com" aria-label="Email Khachik">
+        <FaEnvelope size={24} />
+      </a>
+      <a href="tel:+37477396651" aria-label="Call Khachik">
+        <FaPhone size={22} />
       </a>
     </footer>
   );

@@ -1,6 +1,5 @@
 import logo from "./logo.png";
 import backend from "./backend.png";
-import creator from "./creator.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
 import github from "./github.png";
@@ -9,10 +8,8 @@ import close from "./close.svg";
 import gsap from "./tech/gsap.png";
 import framer from "./tech/framer.png";
 import css from "./tech/css.png";
-import figma from "./tech/figma.png";
 import mysql from "./tech/mysql.png";
 import express from "./tech/express.svg";
-import aws from "./tech/aws.png";
 import mui from "./tech/mui.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
@@ -22,7 +19,6 @@ import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
-import threejs from "./tech/threejs.svg";
 import proj1 from "./proj1.png";
 import proj2 from "./project3.png";
 import proj3 from "./proj2.png";
@@ -31,7 +27,6 @@ import sequelize from './tech/sequelize.png'
 import socket from './tech/soket.svg'
 import sass from './tech/sass.png'
 import lottie from './tech/lottiefiles-logo.svg'
-import axios from './tech/axios.png'
 import postgres from './tech/postgres.png'
 import globus from './globus.svg'
 import adminPanel from './adminPanel.png'
@@ -43,7 +38,13 @@ import CRMW from './CRMW.png'
 import proj6 from './proj6.png'
 import proj7 from './proj7.png'
 import proj8 from './proj8.png'
+import flowerShop from './flower-shop.png'
+import vapeShop from './vape-shop.png'
+import hdoors from './hdoors.png'
 export {
+  flowerShop,
+  vapeShop,
+  hdoors,
   proj7,
   proj8,
   sunIcon,
@@ -54,7 +55,6 @@ export {
   moonIcon,
   globus,
   adminPanel,
-  axios,
   postgres,
   lottie,
   sass,
@@ -63,7 +63,6 @@ export {
   proj3,
   logo,
   backend,
-  creator,
   mobile,
   web,
   github,
@@ -72,11 +71,9 @@ export {
   css,
   mysql,
   express,
-  aws,
   mui,
   gsap,
   framer,
-  figma,
   git,
   html,
   javascript,
@@ -85,7 +82,6 @@ export {
   reactjs,
   redux,
   tailwind,
-  threejs,
   ts,
   sequelize,
   socket

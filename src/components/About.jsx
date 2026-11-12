@@ -27,7 +27,6 @@ const useGsap = (elementRef, animation, delay = 0) => {
 
 
 const ServiceCard = ({ index, title, icon }) => {
-console.log(title);
   const cardRef = useRef(null);
   useGsap(
     cardRef,
@@ -90,10 +89,12 @@ const About = () => {
         ref={paragraphRef}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        Results-driven Full Stack Web Developer with hands-on experience in
-        Node.js, Express.js, MongoDB, and React.js. Passionate about building
-        scalable, high-performance web applications and designing efficient
-        RESTful APIs. 
+        Full Stack Developer experienced with React, TypeScript, Redux Toolkit,
+        Node.js, Express, and SQL and NoSQL databases. I currently build and
+        maintain production features at V Telecom, where I resolve complex
+        issues, improve responsive interfaces, optimize performance, and help
+        strengthen code quality through reviews. I enjoy turning demanding
+        product requirements into scalable, maintainable web experiences.
       </p>
 
       <div className="mt-20 flex justify-between gap-10 flex-wrap">      
